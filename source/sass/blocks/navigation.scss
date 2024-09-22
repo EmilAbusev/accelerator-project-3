@@ -23,9 +23,15 @@
     color: $color-default-white;
   }
 
-  svg {
-    display: block;
-  }
+}
+
+.navigation__logo svg {
+  display: block;
+}
+
+.navigation__logo:hover,
+.navigation__logo:focus svg {
+  fill: $color-default-white;
 }
 
 .navigation__logo.is-opend {

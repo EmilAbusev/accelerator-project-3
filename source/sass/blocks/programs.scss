@@ -123,6 +123,10 @@
   list-style: none;
 }
 
+.programs__list .swiper-slide {
+  display: flex;
+}
+
 .programs__item {
   display: flex;
   padding: 20px;

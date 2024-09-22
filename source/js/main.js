@@ -8,11 +8,14 @@ import { initSwiperHero } from './modules/swiper-slider/hero-swiper-slider';
 import { initBurgerMenu } from './modules/init-burger-menu';
 import { initAccordions } from './modules/init-accordion';
 import {NavigationSticky} from './vendor/navigation-sticky';
+import { initSwiperPrograms } from './modules/swiper-slider/programs-swiper-slider';
+
 
 window.addEventListener('DOMContentLoaded', () => {
   const navigationSticky = new NavigationSticky();
   navigationSticky.init();
   initSwiperHero();
+  initSwiperPrograms();
 
   window.addEventListener('load', () => {
     initBurgerMenu();
