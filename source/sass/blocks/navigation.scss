@@ -125,12 +125,9 @@
 }
 
 
-.navigation__menu-item.is-active {
-  .navigation__menu-link svg {
-    transform: rotate(180deg);
-    transition: $trans-default;
+.navigation__menu-item.is-active .navigation__menu-link svg{
+    transform: rotate(0deg);
     opacity: 100%;
-  }
 }
 
 
@@ -146,12 +143,7 @@
   opacity: 70%;
   cursor: pointer;
   transition: $trans-default;
-
-  svg {
-    margin-left: 11px;
-    stroke: $color-default-white;
-    opacity: 0.6;
-  }
+  text-decoration: none;
 
   @include vp-767 {
     letter-spacing: 0.3px;
@@ -165,6 +157,15 @@
     outline: none;
     opacity: 100%;
   }
+}
+
+.navigation__menu-link svg {
+  margin-left: 11px;
+  stroke: $color-default-white;
+  transform: rotate(180deg);
+  transition: $trans-05;
+  opacity: 0.6;
+  color: $color-transparent;
 }
 
 
@@ -190,6 +191,7 @@
   font-weight: 500;
   color: $color-default-white;
   opacity: 50%;
+  text-decoration: none;
 
   &:hover,
   &:focus {
