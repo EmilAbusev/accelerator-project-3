@@ -53,6 +53,7 @@
   border-radius: 50%;
   cursor: pointer;
   transition: background-color $trans-default;
+  outline: none;
 
   @include vp-767 {
     width: 8px;
@@ -60,10 +61,20 @@
   }
 
   &--active {
-    background-color: $color-cerulean-blue;
+    background-color: $color-endeavour;
   }
 
-  &:active {
+  &:hover:not([disabled]) {
+    background-color: $color-cerulean-blue-07;
+    border: 1px solid $color-default-white;
+  }
+
+  &:focus:not([disabled]) {
+    background-color: $color-cerulean-blue;
+    border: 1px solid $color-transparent;
+  }
+
+  &:active:not([disabled]) {
     background-color: $color-endeavour;
   }
 }

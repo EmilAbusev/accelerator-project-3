@@ -1,7 +1,3 @@
-import '../utils/focus-lock';
-import '../utils/focus-lock';
-import '../utils/scroll-lock';
-
 const navigationWrapper = document.querySelector('[data-navigation="navigation-wrapper"]');
 const navigationLogo = document.querySelector('[data-navigation="navigation-logo"]');
 const navigationButton = document.querySelector('[data-navigation="navigation-button"]');
@@ -22,8 +18,6 @@ const openMenu = () => {
   document.addEventListener('keydown', onEscKeydown);
   navigationMenu.addEventListener('click', onLinkClick);
   navigationOverlay.addEventListener('click', closeMenu);
-  window.scrollLock.disableScrolling();
-  window.focusLock.lock('[data-navigation="navigation-menu"]', false);
 };
 
 function closeMenu() {
@@ -35,8 +29,6 @@ function closeMenu() {
   document.removeEventListener('keydown', onEscKeydown);
   navigationMenu.removeEventListener('click', onLinkClick);
   navigationOverlay.removeEventListener('click', closeMenu);
-  window.scrollLock.enableScrolling();
-  window.FocusLock.unlock();
 }
 
 const initBurgerMenu = () => {

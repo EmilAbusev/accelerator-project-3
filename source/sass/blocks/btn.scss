@@ -12,8 +12,7 @@
 
   transition: transform $trans-default;
 
-  &:hover,
-  &:focus {
+  &:hover:not([disabled]) {
     background-color: $color-cerulean-blue;
     outline: none;
     transition: $trans-default;
@@ -27,18 +26,72 @@
     }
 
     svg {
+      display: none;
+    }
+
+    svg+svg {
+      display: block;
       stroke: $color-cerulean-blue;
     }
   }
 
-  &:active {
+  &:focus:not([disabled]) {
+    outline: none;
+    transition: $trans-default;
+
+    .btn__icon {
+      background-color: $color-cerulean-blue;
+    }
+
+    span {
+      color: $color-cerulean-blue;
+    }
+
+    svg {
+      display: none;
+    }
+
+    svg+svg {
+      display: block;
+    }
+  }
+
+  &:active:not([disabled]) {
     span {
       color: $color-white-07;
     }
 
+    .btn__icon {
+      background-color: $color-default-white;
+    }
+
     svg {
+      display: none;
+    }
+
+    svg+svg {
+      display: block;
       stroke: $color-cerulean-blue-07;
     }
+  }
+
+  &[disabled] {
+    border: 1px solid $color-mischka;
+    color: $color-mischka;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &[disabled] span {
+    color: $color-mischka;
+  }
+
+  &[disabled] svg {
+    stroke: $color-default-white;
+  }
+
+  &[disabled] .btn__icon {
+    background-color: $color-mischka;
   }
 }
 
@@ -55,8 +108,8 @@
     min-width: 290px;
   }
 
-  &:hover,
-  &:focus {
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
     background-color: $color-default-white;
 
     span {
@@ -73,7 +126,7 @@
     }
   }
 
-  &:active {
+  &:active:not([disabled]) {
     span {
       color: $color-cerulean-blue-07;
     }
@@ -83,24 +136,31 @@
     }
   }
 
-
-  .navigation__button-wrapper {
-    background-color: $color-default-white;
+  &[disabled] svg {
+    stroke: $color-default-white;
   }
 
-  svg {
-    display: none;
-  }
-
-  svg + svg {
-    stroke: $color-cerulean-blue;
-    display: block;
+  &[disabled] .navigation__button-wrapper {
+    background-color: $color-mischka;
   }
 }
 
+.btn--burger-button.is-opend .navigation__button-wrapper {
+  background-color: $color-default-white;
+}
+
+.btn--burger-button.is-opend svg {
+  display: none;
+}
+
+.btn--burger-button.is-opend svg+svg {
+  stroke: $color-cerulean-blue;
+  display: block;
+}
+
 .btn--burger-button {
-  &:hover,
-  &:focus {
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
     background-color: $color-cerulean-blue;
     outline: none;
     transition: $trans-default;
@@ -118,29 +178,23 @@
     }
   }
 
-  &:active {
-    span {
-      color: $color-white-07;
-    }
-
-    svg {
-      stroke: $color-cerulean-blue-07;
-    }
-  }
-}
-
-.btn--burger-button.is-disabled {
-  color: $color-mischka;
-  border: 1px solid $color-mischka;
-  cursor: default;
-  pointer-events: none;
-
-  svg {
-    stroke: $color-default-white;
+  &:active:not([disabled]) span {
+    color: $color-white-07;
   }
 
-  .navigation__button-wrapper {
-    background-color: $color-mischka;
+  &:active:not([disabled]) svg {
+    stroke: $color-cerulean-blue-07;
+  }
+
+  &[disabled] {
+    border: 1px solid $color-mischka;
+    color: $color-mischka;
+    cursor: default;
+    pointer-events: none;
+
+    .navigation__button-wrapper {
+      background-color: $color-mischka;
+    }
   }
 }
 
@@ -152,41 +206,31 @@
   height: 22px;
   transition: $trans-default;
 
-  svg {
-    stroke: $color-cerulean-blue;
-    background-color: $color-transparent;
-    cursor: pointer;
-  }
-
-  &:hover,
-  &:focus {
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
     background-color: $color-default-white;
     border-radius: 30px;
     outline: none;
   }
 
-  &:active svg {
+  &:active:not([disabled]) svg {
     stroke: $color-cerulean-blue-07;
   }
 }
 
-.btn--icon-slider.is-disabled {
+.btn--icon-slider svg {
+  stroke: $color-cerulean-blue;
   background-color: $color-transparent;
-  pointer-events: none;
-
-  svg {
-    stroke: $color-mischka;
-  }
+  cursor: pointer;
 }
 
-.btn.is-disabled {
-  border: 1px solid $color-mischka;
+.btn--icon-slider.swiper-button-disabled {
+  background-color: $color-transparent;
   pointer-events: none;
-  color: $color-mischka;
+}
 
-  .btn__icon {
-    background-color: $color-mischka;
-  }
+.btn--icon-slider.swiper-button-disabled svg {
+  stroke: $color-mischka;
 }
 
 .btn__icon {
@@ -205,34 +249,61 @@
     padding: 12px;
   }
 
-  &:hover,
-  &:focus {
+  &:hover:not([disabled]) {
     outline: none;
     background-color: $color-default-white;
     transition: $trans-default;
 
     svg {
-      stroke: $color-cerulean-blue;
+      display: none;
     }
 
-    &:active {
-      svg {
-        stroke: $color-cerulean-blue-07;
-      }
+    svg+svg {
+      display: block;
+      stroke: $color-cerulean-blue;
     }
   }
 
-  svg {
-    stroke: $color-default-white;
+  &:focus:not([disabled]) {
+    outline: none;
+    background-color: $color-cerulean-blue;
+    transition: $trans-default;
+
+    svg {
+      display: none;
+    }
+
+    svg+svg {
+      display: block;
+
+    }
+  }
+
+  &:active:not([disabled]) {
+    background-color: $color-default-white;
+
+    svg {
+      display: none;
+    }
+
+    svg+svg {
+      display: block;
+      stroke: $color-cerulean-blue-07;
+    }
+  }
+
+  &[disabled] {
+    outline: none;
+    background-color: $color-mischka;
+    cursor: default;
+    pointer-events: none;
   }
 }
 
+.btn__icon svg {
+  stroke: $color-default-white;
+}
 
-.btn__icon.is-disabled {
-  pointer-events: none;
-  background-color: $color-mischka;
-
-  svg {
-    stroke: $color-default-white;
-  }
+.btn__icon svg+svg {
+  display: none;
 }
