@@ -9,6 +9,7 @@ import { initBurgerMenu } from './modules/init-burger-menu';
 import { initAccordions } from './modules/init-accordion';
 import {NavigationSticky} from './vendor/navigation-sticky';
 import { initSwiperPrograms } from './modules/swiper-slider/programs-swiper-slider';
+import {initSliderNews} from './modules/swiper-slider/news-swiper-slider';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -20,5 +21,6 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initBurgerMenu();
     initAccordions();
+    initSliderNews();
   });
 });

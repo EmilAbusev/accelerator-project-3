@@ -1,10 +1,11 @@
-import Swiper from 'swiper';
+import Swiper from 'swiper/bundle';
 import { Navigation, Scrollbar } from 'swiper/modules';
+import 'swiper/css';
 
 const sliderPrograms = document.querySelector('[data-programs="swiper"]');
 const swiperScrollbar = document.querySelector('[data-programs="swiper-scrollbar"]');
-const buttonPrev = document.querySelector('[data-programs="progran-swiper-prev"]');
-const buttonNext = document.querySelector('[data-programs="progran-swiper-next"]');
+const buttonPrev = document.querySelector('[data-programs="program-button-prev"]');
+const buttonNext = document.querySelector('[data-programs="program-button-next"]');
 
 
 const swiperPrograms = () => {

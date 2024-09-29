@@ -9,3 +9,24 @@
     @content;
   }
 }
+
+
+@mixin vp-319 {
+  @media (max-width: ($vp-320 - 1px)) {
+    @content;
+  }
+}
+
+
+@mixin angle {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    mask-image: url("../img/svg/angle.svg");
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    background-color: $color-default-white;
+  }
+}
