@@ -323,16 +323,16 @@
       background-color: $color-default-white;
     }
   }
+}
 
-  &[disabled] {
-    background-color: $color-mischka;
-    pointer-events: none;
-    cursor: default;
+.faq__btn[disabled] {
+  background-color: $color-mischka;
+  pointer-events: none;
+  cursor: default;
 
-    &::after,
-    &::before {
-      background-color: $color-white-06;
-    }
+  &::after,
+  &::before {
+    background-color: $color-white-06;
   }
 }
 
