@@ -17,7 +17,7 @@
     outline: none;
     transition: $trans-default;
 
-    .btn__icon {
+    .btn-icon {
       background-color: $color-default-white;
       transform: rotate(45deg);
     }
@@ -35,7 +35,7 @@
     outline: none;
     transition: $trans-default;
 
-    .btn__icon {
+    .btn-icon {
       background-color: $color-cerulean-blue;
       transform: rotate(45deg);
     }
@@ -54,7 +54,7 @@
       color: $color-white-07;
     }
 
-    .btn__icon {
+    .btn-icon {
       background-color: $color-default-white;
       transform: rotate(45deg);
     }
@@ -79,7 +79,7 @@
     stroke: $color-default-white;
   }
 
-  &[disabled] .btn__icon {
+  &[disabled] .btn-icon {
     background-color: $color-mischka;
   }
 }
@@ -230,13 +230,14 @@
 .btn--icon-slider.swiper-button-disabled {
   background-color: $color-transparent;
   pointer-events: none;
+  border: none;
 }
 
 .btn--icon-slider.swiper-button-disabled svg {
   stroke: $color-mischka;
 }
 
-.btn__icon {
+.btn-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -283,12 +284,12 @@
   }
 }
 
-.btn__icon svg {
+.btn-icon svg {
   stroke: $color-default-white;
 }
 
 
-.btn__icon-slide {
+.btn-icon-slide {
   background-color: $color-cerulean-blue;
   transition: $trans-default;
   border: none;

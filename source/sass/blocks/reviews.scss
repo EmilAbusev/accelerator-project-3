@@ -64,8 +64,12 @@
   list-style: none;
 }
 
-.reviews__item {
+.reviews__list .swiper-slide {
   height: auto;
+}
+
+
+.reviews__item {
   border-radius: 16px;
   border: 1px solid $color-cerulean-blue;
   padding: 49px 51px 43px 49px;
@@ -81,6 +85,7 @@
     padding: 30px 14px 25px;
   }
 }
+
 
 .reviews__item blockquote {
   margin: 0;
@@ -241,6 +246,16 @@ dd {
   width: calc(100% - 52px);
   background-color: $color-cerulean-blue-02;
   grid-column: 1/-2;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.reviews__scrollbar .swiper-scrollbar-drag {
+  height: 2px;
+  background-color: $color-cerulean-blue;
+  cursor: pointer;
 }
 
 .reviews__slider-buttons {

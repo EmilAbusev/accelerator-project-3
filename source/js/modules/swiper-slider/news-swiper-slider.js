@@ -10,7 +10,7 @@ const isActive = 'is-active';
 const buttonContainer = document.querySelector('[data-news="button-container"]');
 const newsButtons = buttonContainer.querySelectorAll('[data-name="news-button"]');
 const newsSlide = document.querySelectorAll('[data-news="slide"]');
-const isMenuCurrent = 'site-nav__link--current';
+const isMenuCurrent = 'navigation__internal-link--current';
 const newsMenuLinksContainer = document.querySelector('[data-navigation="navigation-menu-links"]');
 const newsMenuLinks = newsMenuLinksContainer.querySelectorAll('[data-navigation="navigation-link"]');
 
@@ -31,6 +31,7 @@ const setSliderNews = () => {
       prevEl: buttonPrev,
     },
     observer: true,
+    spaceBetween: 20,
     slidesPerView: 'auto',
     grid: {
       rows: 1,
@@ -51,8 +52,7 @@ const setSliderNews = () => {
       320: {
         spaceBetween: 20,
         grid: {
-          rows: 1,
-          slidesPerView: 3,
+          rows: 2,
         },
       },
     },

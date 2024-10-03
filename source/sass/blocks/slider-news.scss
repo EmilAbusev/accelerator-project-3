@@ -315,7 +315,7 @@
     }
   }
 
-  .slider-news__info-link {
+  .slider-news__link {
     display: flex;
     align-self: center;
     justify-content: center;
@@ -361,35 +361,7 @@
   }
 }
 
-.slider-news__swiper-controls {
-  display: flex;
-  justify-content: space-between;
-
-  @include vp-1439 {
-    max-height: 31px;
-  }
-
-  @include vp-767 {
-    padding-right: 15px;
-  }
-}
-
-.slider-news__controls-btn {
-  align-self: center;
-}
-
-.slider-news__pagination {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-
-  @include vp-767 {
-    gap: 16px;
-  }
-}
-
-.slider-news__pagination .swiper-pagination-bullet {
+.news__pagination .swiper-pagination-bullet {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -442,7 +414,7 @@
   }
 }
 
-.slider-news__pagination .swiper-pagination-bullet-active {
+.news__pagination .swiper-pagination-bullet-active {
   color: $color-default-white;
   background: $color-cerulean-blue;
 }

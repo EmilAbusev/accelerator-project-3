@@ -22,3 +22,19 @@
 .header__navigation.is-hidden {
   transform: translateY(-100%);
 }
+
+
+.header__overlay {
+  display: none;
+}
+
+.header__overlay.is-opend {
+  display: block;
+  width: 100%;
+  height: 110vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: $color-black-pearl;
+}
