@@ -32,7 +32,8 @@
   font-size: 50px;
   font-weight: 400;
   margin-bottom: 44px;
-  text-align: center;
+  text-align: start;
+  color: $color-cerulean-blue;
 
   @include vp-1439 {
     padding-left: 0;
