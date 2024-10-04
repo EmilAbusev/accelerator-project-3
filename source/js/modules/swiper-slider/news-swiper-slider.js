@@ -1,6 +1,7 @@
 import Swiper from 'swiper/bundle';
 import { Manipulation, Grid, Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css';
+import 'swiper/css/grid';
+
 
 const newsSlider = document.querySelector('[data-swiper="news"]');
 const buttonPrev = document.querySelector('[data-news="news-button-prev"]');
@@ -15,7 +16,6 @@ const newsMenuLinksContainer = document.querySelector('[data-navigation="navigat
 const newsMenuLinks = newsMenuLinksContainer.querySelectorAll('[data-navigation="navigation-link"]');
 
 let slider;
-
 const setSliderNews = () => {
   slider = new Swiper(newsSlider, {
     modules: [Manipulation, Grid, Navigation, Pagination],
@@ -23,7 +23,7 @@ const setSliderNews = () => {
       el: newsPagination,
       clickable: true,
       renderBullet: function (index, className) {
-        return `<span class="${className}">${index + 1}</span>`;
+        return `<span class="${ className }">${ index + 1 }</span>`;
       },
     },
     navigation: {
@@ -130,3 +130,4 @@ const initSliderNews = () => {
 };
 
 export { initSliderNews };
+
