@@ -253,7 +253,7 @@
                 карьеры, предоставляя им инструменты для решения сложных проблем, с которыми сталкиваются в мире. Цель
                 центра — наделить этих людей способностью инициировать значимые изменения.</p>
               <div class="about__information-wrapper">
-                <a class="about__information-button btn" href="#">
+                <a class="about__information-button btn" href="#" data-open-modal="about">
                   <span>подробнее о проекте</span>
                   <div class="btn-icon">
                     <svg width="10" height="10" viewBox="0 0 10 10" role="img" focusable="false" aria-hidden="true">
@@ -1258,7 +1258,181 @@
           </div>
         </div>
       </section>
+      <section class="feedback" data-test="form" id="feedback">
+        <div class="container">
+          <div class="feedback__wrapper">
+            <div class="feedback__form form form--primary" data-form-validate="data-form-validate"
+              data-callback="basePrimary">
+              <button class="feedback__form-button-close form-button-close" type="button"
+                data-close-modal="data-close-modal" aria-label="Закрыть модальное окно.">
+                <svg width="18" height="18" viewBox="0 0 18 18" role="img" aria-hidden="true" focusable="false">
+                  <use href="/__spritemap#sprite-cross"></use>
+                </svg>
+              </button>
+              <h2>Напишите нам</h2>
+              <p>Оставьте ваши контакты, если&nbsp;у&nbsp;вас<br class="show-br-mobile"> остались вопросы &mdash;<br
+                  class="show-br-mobile"> мы&nbsp;на&nbsp;них ответим!</p>
+              <form action="https://echo.htmlacademy.ru/" method="post" data-form="form-primary">
+                <div class="custom-input custom-input--primary" data-required data-validate-type="text"
+                  data-limitation="letters-and-digit">
+                  <label>
+                    <span>Имя</span>
+                    <input type="text" name="name" required autocomplete="off">
+                  </label>
+                </div>
+                <div class="custom-input custom-input--primary" data-required data-validate-type="phone">
+                  <label>
+                    <span>Телефон</span>
+                    <input type="tel" name="phone" required autocomplete="off">
+                  </label>
+                </div>
+                <div class="custom-input custom-input--primary auto-resize-textarea" data-required
+                  data-validate-type="text">
+                  <div class="custom-input__wrapper">
+                    <label for="message"><span>Ваше сообщение</span></label>
+                    <textarea name="message" id="message" required rows="1" aria-label="textarea"></textarea>
+                  </div>
+                </div>
+                <div class="feedback__custom-select custom-select custom-select--primary" data-select="data-select"
+                  data-validate-type="select" data-name="city" data-id="primary-city">
+                  <div class="custom-select__label">Выберите город</div>
+                  <button class="custom-select__button custom-select__button--primary" type="button"
+                    aria-label="Выберите город.">
+                    <span class="custom-select__text"></span>
+                    <span class="custom-select__icon">
+                      <svg width="16" height="16" viewBox="0 0 16 16" role="img" aria-hidden="true" focusable="false">
+                        <use href="/__spritemap#sprite-arrow-down"></use>
+                      </svg>
+                    </span>
+                  </button>
+                  <ul class="custom-select__list custom-select__list--primary" role="listbox">
+                    <li class="custom-select__item" tabindex="0" data-select-value="empty" aria-selected="false"
+                      role="option"></li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="saintpetersburg" aria-selected="false"
+                      role="option">Санкт-Петербург
+                    </li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="Moscow" aria-selected="false"
+                      role="option">Москва</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="kazan" aria-selected="false"
+                      role="option">Казань</li>
+                  </ul>
+                </div>
+                <div class="custom-toggle custom-toggle--primary" data-validate-type="checkbox"
+                  data-required="data-required">
+                  <label>
+                    <input type="checkbox" value="agree" name="user-agreement"
+                      aria-label="Согласие на обработку персональных данных.">
+                    <span class="custom-toggle__box"></span>
+                    <svg width="10" height="8" viewBox="0 0 10 8" role="img" aria-hidden="true" focusable="false">
+                      <use href="/__spritemap#sprite-check"></use>
+                    </svg>
+                    <span class="custom-toggle__text">Я согласен на обработку моих персональных данных</span>
+                  </label>
+                </div>
+                <button class="feedback__form-btn btn btn-form" type="submit">
+                  <span>Отправить</span>
+                  <div class="btn-icon">
+                    <svg width="10" height="10" viewBox="0 0 10 10" role="img" aria-hidden="true" focusable="false">
+                      <use href="/__spritemap#sprite-arrow"></use>
+                    </svg>
+                  </div>
+                </button>
+                <input type="hidden" name="form" value="Данные были отправлены из главной формы (на странице)">
+              </form>
+            </div>
+            <div class="feedback__image">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" width="320" height="753"
+                  srcset="./img/content/form/background-mobile@1x.webp 1x">
+                <source type="image/webp" media="(max-width: 1439px)" width="678" height="780"
+                  srcset="./img/content/form/background-tablet@1x.webp 1x">
+                <source type="image/webp" width="1240" height="803"
+                  srcset="./img/content/form/background-desktop@1x.webp 1x">
+                <source type="image/jpeg" media="(max-width: 767px)" width="320" height="753"
+                  srcset="./img/content/form/background-mobile@1x.jpg 1x">
+                <source type="image/jpeg" media="(max-width: 1439px)" width="678" height="780"
+                  srcset="./img/content/form/background-tablet@1x.jpg 1x">
+                <img src="./img/content/form/background-desktop@1x.jpg" width="1240" height="803" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+  </div>
+  <div class="modal modal--preload" data-modal="about">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+      <div class="form form--secondary" data-form-validate="data-form-validate" data-callback="baseSecondary">
+        <button class="modal__close-btn" type="button" data-close-modal="data-close-modal"
+          aria-label="Закрыть модальное окно.">
+          <svg width="18" height="18" viewBox="0 0 18 18" role="img" aria-hidden="true" focusable="false">
+            <use href="/__spritemap#sprite-cross"></use>
+          </svg>
+        </button>
+        <h2>Напишите нам</h2>
+        <p>Оставьте ваши контакты, если&nbsp;у&nbsp;вас&nbsp;остались вопросы &mdash; мы&nbsp;на&nbsp;них ответим!</p>
+        <form action="https://echo.htmlacademy.ru/" method="post" data-form="form-secondary">
+          <div class="custom-input custom-input--secondary" data-required data-validate-type="text"
+            data-limitation="letters-and-digit">
+            <label>
+              <span>Имя</span>
+              <input type="text" name="name" required autocomplete="off">
+            </label>
+          </div>
+          <div class="custom-input custom-input--secondary" data-required data-validate-type="phone">
+            <label>
+              <span>Телефон</span>
+              <input type="tel" name="phone" required autocomplete="off">
+            </label>
+          </div>
+          <div class="custom-select custom-select--secondary" data-select="data-select" data-validate-type="select"
+            data-name="city" data-id="secondary-city">
+            <div class="custom-select__label">Выберите город</div>
+            <button class="custom-select__button custom-select__button--secondary" type="button"
+              aria-label="Выберите город.">
+              <span class="custom-select__text"></span>
+              <span class="custom-select__icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" role="img" aria-hidden="true" focusable="false">
+                  <use href="/__spritemap#sprite-arrow-down"></use>
+                </svg>
+              </span>
+            </button>
+            <ul class="custom-select__list custom-select__list--secondary" role="listbox">
+              <li class="custom-select__item" tabindex="0" data-select-value="empty" aria-selected="false"
+                role="option"></li>
+              <li class="custom-select__item" tabindex="0" data-select-value="saintpetersburg" aria-selected="false"
+                role="option">Санкт-Петербург</li>
+              <li class="custom-select__item" tabindex="0" data-select-value="Moscow" aria-selected="false"
+                role="option">Москва</li>
+              <li class="custom-select__item" tabindex="0" data-select-value="kazan" aria-selected="false"
+                role="option">Казань</li>
+            </ul>
+          </div>
+          <div class="form__custom-toggle custom-toggle custom-toggle--secondary" data-validate-type="checkbox"
+            data-required="data-required">
+            <label>
+              <input type="checkbox" value="agree" name="user-agreement"
+                aria-label="Согласие на обработку персональных данных.">
+              <span class="custom-toggle__box"></span>
+              <svg width="10" height="8" viewBox="0 0 10 8" role="img" aria-hidden="true" focusable="false">
+                <use href="/__spritemap#sprite-check"></use>
+              </svg>
+              <span class="custom-toggle__text">Я согласен на обработку моих персональных данных</span>
+            </label>
+          </div>
+          <button class="form__btn btn btn-modal" type="submit">
+            <span>Отправить</span>
+            <div class="btn-icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" role="img" aria-hidden="true" focusable="false">
+                <use href="/__spritemap#sprite-arrow"></use>
+              </svg>
+            </div>
+          </button>
+          <input type="hidden" name="form" value="Данные были отправлены из формы в модальном окне">
+        </form>
+      </div>
+    </div>
   </div>
   <script type="module" src="js/main.js"></script>
 </body>

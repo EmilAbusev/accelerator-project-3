@@ -142,12 +142,13 @@
   display: none;
 }
 
-.btn--burger-button.is-opend svg + svg {
+.btn--burger-button.is-opend svg+svg {
   stroke: $color-cerulean-blue;
   display: block;
 }
 
 .btn--burger-button {
+
   &:hover:not([disabled]),
   &:focus:not([disabled]) {
     background-color: $color-cerulean-blue;
@@ -322,4 +323,87 @@
     cursor: default;
     pointer-events: none;
   }
+}
+
+.btn-form {
+  padding-left: 100px;
+  border: 1px solid $color-default-white;
+  border-radius: 30px;
+
+  &:hover:not([disabled]) {
+    border: 1px solid $color-cerulean-blue;
+    background-color: $color-default-white;
+
+    span {
+      color: $color-cerulean-blue;
+    }
+
+    .btn-icon {
+      outline: none;
+      background-color: $color-cerulean-blue;
+      transition: $trans-default;
+      transform: rotate(45deg);
+    }
+
+    svg {
+      stroke: $color-default-white;
+    }
+  }
+
+  &:focus:not([disabled]) {
+    background-color: $color-default-white;
+
+    span {
+      color: $color-cerulean-blue;
+    }
+
+    .btn-icon {
+      outline: none;
+      background-color: $color-cerulean-blue;
+      transition: $trans-default;
+      transform: rotate(45deg);
+    }
+
+    svg {
+      stroke: $color-default-white;
+    }
+  }
+
+  &:active:not([disabled]) {
+    background-color: $color-default-white;
+
+    span {
+      color: $color-cerulean-blue-07;
+    }
+
+    .btn-icon {
+      outline: none;
+      background-color: $color-cerulean-blue;
+      transition: $trans-default;
+      transform: rotate(45deg);
+    }
+
+    svg {
+      stroke: $color-white-07;
+    }
+  }
+
+  &[disabled] {
+    outline: none;
+    background-color: $color-mischka;
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+.btn-form span {
+  color: $color-default-white;
+}
+
+.btn-form .btn-icon {
+  background-color: $color-default-white;
+}
+
+.btn-form .btn-icon svg {
+  stroke: $color-cerulean-blue;
 }
