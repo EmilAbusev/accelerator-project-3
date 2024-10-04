@@ -47,10 +47,10 @@
             <div class="navigation__menu" data-navigation="navigation-menu">
               <ul class="navigation__menu-list" data-accordion="parent">
                 <li class="navigation__menu-item">
-                  <a class="navigation__menu-link" href="#">О проекте</a>
+                  <a class="navigation__menu-link" href="#about">О проекте</a>
                 </li>
                 <li class="navigation__menu-item" data-accordion="element">
-                  <a class="navigation__menu-link" href="#" data-accordion="button">
+                  <a class="navigation__menu-link" href="#programs" data-accordion="button">
                     <span>Программы</span>
                     <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
                       <use href="__spritemap#sprite-arrow-down"></use>
@@ -75,10 +75,10 @@
                   </ul>
                 </li>
                 <li class="navigation__menu-item">
-                  <a class="navigation__menu-link" href="#">как поехать</a>
+                  <a class="navigation__menu-link" href="#grant">как поехать</a>
                 </li>
                 <li class="navigation__menu-item">
-                  <a class="navigation__menu-link" href="#">отзывы</a>
+                  <a class="navigation__menu-link" href="#reviews">отзывы</a>
                 </li>
                 <li class="navigation__menu-item" data-accordion="element">
                   <a class="navigation__menu-link" href="#" data-accordion="button">
@@ -90,25 +90,29 @@
                   <ul class="navigation__internal-list" data-accordion="content"
                     data-navigation="navigation-menu-links">
                     <li class="navigation__internal-item">
-                      <a class="navigation__internal-link navigation__internal-link--current" href="#"
-                        data-navigation="navigation-link">Общее</a>
+                      <a class="navigation__internal-link navigation__internal-link--current" href="#news"
+                        data-navigation="navigation-link" data-filter="all">Общее</a>
                     </li>
                     <li class="navigation__internal-item">
-                      <a class="navigation__internal-link" href="#" data-navigation="navigation-link">Волонтёрство</a>
+                      <a class="navigation__internal-link" href="#news" data-navigation="navigation-link"
+                        data-filter="volunteering">Волонтёрство</a>
                     </li>
                     <li class="navigation__internal-item">
-                      <a class="navigation__internal-link" href="#" data-navigation="navigation-link">Стажировки</a>
+                      <a class="navigation__internal-link" href="#news" data-navigation="navigation-link"
+                        data-filter="internships">Стажировки</a>
                     </li>
                     <li class="navigation__internal-item">
-                      <a class="navigation__internal-link" href="#" data-navigation="navigation-link">Карьера</a>
+                      <a class="navigation__internal-link" href="#news" data-navigation="navigation-link"
+                        data-filter="career">Карьера</a>
                     </li>
                     <li class="navigation__internal-item">
-                      <a class="navigation__internal-link" href="#" data-navigation="navigation-link">Путешествия</a>
+                      <a class="navigation__internal-link" href="#news" data-navigation="navigation-link"
+                        data-filter="travelling">Путешествия</a>
                     </li>
                   </ul>
                 </li>
                 <li class="navigation__menu-item">
-                  <a class="navigation__menu-link" href="#">контакты</a>
+                  <a class="navigation__menu-link" href="#contacts">контакты</a>
                 </li>
               </ul>
             </div>
@@ -240,7 +244,7 @@
       </section>
     </header>
     <main>
-      <section class="about" data-test="about">
+      <section class="about" data-test="about" id="about">
         <div class="container">
           <div class="about__conten">
             <div class="about__titel">
@@ -502,7 +506,6 @@
           </div>
         </div>
       </section>
-
       <section class="grant" data-test="grant" id="grant">
         <div class="container">
           <div class="grant__wrapper">
@@ -1308,8 +1311,8 @@
                   <ul class="custom-select__list custom-select__list--primary" role="listbox">
                     <li class="custom-select__item" tabindex="0" data-select-value="empty" aria-selected="false"
                       role="option"></li>
-                    <li class="custom-select__item" tabindex="0" data-select-value="saintpetersburg" aria-selected="false"
-                      role="option">Санкт-Петербург
+                    <li class="custom-select__item" tabindex="0" data-select-value="saintpetersburg"
+                      aria-selected="false" role="option">Санкт-Петербург
                     </li>
                     <li class="custom-select__item" tabindex="0" data-select-value="Moscow" aria-selected="false"
                       role="option">Москва</li>
@@ -1359,6 +1362,73 @@
         </div>
       </section>
     </main>
+    <footer>
+      <section class="footer" data-test="footer" id="footer">
+        <div class="container">
+          <h2 class="visually-hidden">Подвал сайта</h2>
+          <div class="footer__wrapper">
+            <a class="footer__logo logo" href="#" aria-label="Логотип проекта Стажировка" aria-current="page">
+              <svg width="30" height="30" viewBox="0 0 30 30" role="img">
+                <use href="/__spritemap#sprite-logotype"></use>
+              </svg>
+            </a>
+            <div class="footer__site-nav site-nav site-nav--footer">
+              <ul class="site-nav__list">
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="#about">О проекте</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="#programs">Программы</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="#grant">Как поехать</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="#reviews">Отзывы</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="#news">Новости</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link social-link" href="#" target="_blank" rel="noreferrer noopener"
+                  aria-label="Вконтакте.">
+                  <svg width="16" height="16">
+                    <use href="/__spritemap#sprite-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link social-link" href="#" target="_blank" rel="noreferrer noopener"
+                  aria-label="Одноклассники.">
+                  <svg width="16" height="16">
+                    <use href="/__spritemap#sprite-ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link social-link" href="#" target="_blank" rel="noreferrer noopener"
+                  aria-label="Reddit.">
+                  <svg width="16" height="16">
+                    <use href="/__spritemap#sprite-reddit"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="footer__copyright">
+              <p>Стажировка © 2023 Все права защищены</p>
+              <a href="#">Политика конфиденциальности</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    </footer>
   </div>
   <div class="modal modal--preload" data-modal="about">
     <div class="modal__wrapper">
@@ -1438,24 +1508,3 @@
 </body>
 
 </html>
-
-<!-- <body class="page-body"></body> -->
-<!-- пример использования спрайта -->
-<!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт"> -->
-<!-- <svg> -->
-<!-- <use href="/__spritemap#sprite-user"></use> -->
-<!-- </svg> -->
-<!-- примеры требуемых атрибутов data-test="*" -->
-<!-- <div data-test="hero">hero</div> -->
-<!-- <div data-test="about">about</div> -->
-<!-- <div data-test="programs">programs</div> -->
-<!-- <div data-test="grant">grant</div> -->
-<!-- <div data-test="news">news</div> -->
-<!-- <div data-test="FAQ">FAQ</div> -->
-<!-- <div data-test="reviews">reviews</div> -->
-<!-- <div data-test="contacts">contacts</div> -->
-<!-- <div data-test="form">form</div> -->
-<!-- <div data-test="footer">footer</div> -->
-<!-- <script type="module" src="js/main.js"></script> -->
-<!-- </body> -->
-<!--  -->
