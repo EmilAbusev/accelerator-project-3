@@ -45,6 +45,11 @@
     resize: none;
     appearance: none;
 
+    @include vp-1439 {
+      min-height: 86px;
+      max-height: 94px;
+    }
+
     @include vp-767 {
       min-height: 92px;
     }
@@ -63,6 +68,10 @@
   label,
   .custom-input__wrapper {
     gap: 13px;
+
+    @include vp-1439 {
+      gap: 14px;
+    }
 
     @include vp-767 {
       gap: 10px;

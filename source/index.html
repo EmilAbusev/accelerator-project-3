@@ -489,13 +489,13 @@
             <div class="programs__navigation">
               <div class="programs__scrollbar" data-programs="swiper-scrollbar"></div>
               <div class="programs__navigation-button">
-                <button class="swiper-button-prev btn btn--icon-slider" aria-label="Предыдущий слайд."
+                <button class="swiper-button-prev btn btn--icon-slider" type="button" aria-label="Предыдущий слайд."
                   data-programs="program-button-prev">
                   <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
                     <use href="__spritemap#sprite-slider-arrow"></use>
                   </svg>
                 </button>
-                <button class="swiper-button-next btn btn--icon-slider" aria-label="Следующий слайд."
+                <button class="swiper-button-next btn btn--icon-slider" type="button" aria-label="Следующий слайд."
                   data-programs="program-button-next">
                   <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
                     <use href="__spritemap#sprite-slider-arrow"></use>
@@ -929,15 +929,15 @@
             </ul>
           </div>
           <div class="news__swiper-controls">
-            <button class="news__controls-button swiper-button-prev btn btn--icon-slider" aria-label="Предыдущий слайд."
-              data-news="news-button-prev">
+            <button class="news__controls-button swiper-button-prev btn btn--icon-slider" type="button"
+              aria-label="Предыдущий слайд." data-news="news-button-prev">
               <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
                 <use href="__spritemap#sprite-slider-arrow"></use>
               </svg>
             </button>
             <div class="news__pagination" data-swiper="news-pagination"></div>
-            <button class="news__controls-button swiper-button-next btn btn--icon-slider" aria-label="Следующий слайд."
-              data-news="news-button-next">
+            <button class="news__controls-button swiper-button-next btn btn--icon-slider" type="button"
+              aria-label="Следующий слайд." data-news="news-button-next">
               <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
                 <use href="__spritemap#sprite-slider-arrow"></use>
               </svg>
@@ -989,7 +989,7 @@
             <li class="faq__item faq__item--differ" data-accordion="element">
               <div class="faq__wrapper" data-accordion="button">
                 <div class="faq__question">
-                  <h3>Признаётся ли учёба в&nbsp;рамках проекта для дальнейшего обучения?</h3>
+                  <h3>Признаётся ли учёба в&nbsp;рамках проекта<br> для дальнейшего обучения?</h3>
                   <button class="faq__btn" type="button" data-accordion="button" aria-label="Показать ответ."></button>
                 </div>
                 <div class="faq__answer" data-accordion="content">
@@ -1302,16 +1302,14 @@
                       </svg>
                     </span>
                   </button>
-                  <ul class="custom-select__list custom-select__list--primary" role="listbox">
-                    <li class="custom-select__item" tabindex="0" data-select-value="empty" aria-selected="false"
-                      role="option"></li>
-                    <li class="custom-select__item" tabindex="0" data-select-value="saintpetersburg"
-                      aria-selected="false" role="option">Санкт-Петербург
+                  <ul class="custom-select__list custom-select__list--primary">
+                    <li class="custom-select__item" tabindex="0" data-select-value="empty"></li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="saintpetersburg">Санкт-Петербург
                     </li>
-                    <li class="custom-select__item" tabindex="0" data-select-value="Moscow" aria-selected="false"
-                      role="option">Москва</li>
-                    <li class="custom-select__item" tabindex="0" data-select-value="kazan" aria-selected="false"
-                      role="option">Казань</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="Moscow">Москва
+                    </li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="kazan">Казань
+                    </li>
                   </ul>
                 </div>
                 <div class="custom-toggle custom-toggle--primary" data-validate-type="checkbox"
@@ -1328,11 +1326,11 @@
                 </div>
                 <button class="feedback__form-btn btn btn-form" type="submit">
                   <span>Отправить</span>
-                  <div class="btn-icon">
+                  <span class="btn-icon">
                     <svg width="10" height="10" viewBox="0 0 10 10" role="img" aria-hidden="true" focusable="false">
                       <use href="/__spritemap#sprite-arrow"></use>
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <input type="hidden" name="form" value="Данные отправлены из формы с главной страницы.">
               </form>
@@ -1422,7 +1420,6 @@
         </div>
       </section>
     </footer>
-    </footer>
   </div>
   <div class="modal modal--preload" data-modal="about">
     <div class="modal__wrapper">
@@ -1462,15 +1459,12 @@
                 </svg>
               </span>
             </button>
-            <ul class="custom-select__list custom-select__list--secondary" role="listbox">
-              <li class="custom-select__item" tabindex="0" data-select-value="empty" aria-selected="false"
-                role="option"></li>
-              <li class="custom-select__item" tabindex="0" data-select-value="saintpetersburg" aria-selected="false"
-                role="option">Санкт-Петербург</li>
-              <li class="custom-select__item" tabindex="0" data-select-value="Moscow" aria-selected="false"
-                role="option">Москва</li>
-              <li class="custom-select__item" tabindex="0" data-select-value="kazan" aria-selected="false"
-                role="option">Казань</li>
+            <ul class="custom-select__list custom-select__list--secondary">
+              <li class="custom-select__item" tabindex="0" data-select-value="empty"></li>
+              <li class="custom-select__item" tabindex="0" data-select-value="saintpetersburg">
+                Санкт-Петербург</li>
+              <li class="custom-select__item" tabindex="0" data-select-value="Moscow">Москва</li>
+              <li class="custom-select__item" tabindex="0" data-select-value="kazan">Казань</li>
             </ul>
           </div>
           <div class="form__custom-toggle custom-toggle custom-toggle--secondary" data-validate-type="checkbox"
@@ -1487,11 +1481,11 @@
           </div>
           <button class="form__btn btn btn-modal" type="submit">
             <span>Отправить</span>
-            <div class="btn-icon">
+            <span class="btn-icon">
               <svg width="10" height="10" viewBox="0 0 10 10" role="img" aria-hidden="true" focusable="false">
                 <use href="/__spritemap#sprite-arrow"></use>
               </svg>
-            </div>
+            </span>
           </button>
           <input type="hidden" name="form" value="Данные отправлены из формы в модального окна.">
         </form>

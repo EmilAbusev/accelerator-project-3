@@ -132,6 +132,10 @@
 }
 
 
+.navigation__menu-item.is-active .navigation__menu-link {
+  opacity: 100%;
+}
+
 .navigation__menu-item.is-active .navigation__menu-link svg {
   transform: rotate(0deg);
   opacity: 100%;

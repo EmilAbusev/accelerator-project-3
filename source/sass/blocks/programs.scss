@@ -3,7 +3,8 @@
   padding-bottom: 60px;
 
   @include vp-1439 {
-    padding-top: 98px;
+    padding-top: 53px;
+    padding-bottom: 50px;
   }
 
   @include vp-767 {
@@ -68,7 +69,7 @@
   color: $color-cerulean-blue;
 
   @include vp-1439 {
-    margin-top: 3px;
+    margin-top: 1px;
     font-size: 34px;
   }
 
@@ -89,6 +90,12 @@
   margin-top: 3px;
   border-radius: 30px;
   gap: 31px;
+
+  @include vp-1439 {
+    padding: 4px 3px;
+    padding-left: 31px;
+    margin-top: -2px;
+  }
 
   @include vp-767 {
     padding-top: 3px;
@@ -144,7 +151,8 @@
 
   @include vp-1439 {
     max-width: 324px;
-    padding-right: 41px;
+    padding-right: 20px;
+    padding-bottom: 10px;
   }
 
   @include vp-767 {
@@ -199,8 +207,8 @@
   content: "";
 
   @include vp-1439 {
-    bottom: -2px;
-    right: -16px;
+    bottom: 0;
+    right: -21px;
   }
 
   @include vp-767 {
@@ -221,7 +229,10 @@
   border-radius: 0 12px 12px;
 
   @include vp-1439 {
+    padding: 13px 18px;
+    padding-top: 14px;
     min-height: 77px;
+    gap: 22px;
   }
 
   @include vp-767 {
@@ -257,6 +268,7 @@
     width: 30px;
     height: 30px;
     padding: 12px;
+    margin-bottom: 3px;
   }
 
   @include vp-767 {
@@ -302,7 +314,7 @@
   margin-top: -2px;
 
   @include vp-1439 {
-    margin-top: -1px;
+    margin-top: 0;
     padding-right: 45px;
   }
 
@@ -320,6 +332,10 @@
   width: calc(100% - 106px);
   height: 2px;
   background-color: $color-cerulean-blue-02;
+
+  @include vp-1439 {
+    width: calc(100% - 109px);
+  }
 
   @include vp-767 {
     display: none;

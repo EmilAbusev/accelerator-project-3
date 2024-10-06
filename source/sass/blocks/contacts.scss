@@ -5,7 +5,7 @@
   background-color: $color-cerulean-blue;
 
   @include vp-1439 {
-    padding-top: 99px;
+    padding-top: 96px;
     padding-bottom: 100px;
   }
 
@@ -45,9 +45,9 @@
   @include vp-1439 {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 31px;
     justify-content: unset;
-    padding-bottom: 27px;
+    padding-bottom: 31px;
   }
 
   @include vp-767 {
@@ -68,6 +68,7 @@
 
   @include vp-1439 {
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 34px;
   }
 
@@ -91,7 +92,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
-    gap: 91px;
+    gap: 22px;
   }
 
   @include vp-767 {
@@ -109,6 +110,12 @@
 
   &:first-child {
     max-width: 263px;
+    row-gap: 23px;
+    margin-right: -2px;
+
+    @include vp-1439 {
+      max-width: 401px;
+    }
 
     @include vp-767 {
       max-width: 230px;
@@ -122,11 +129,6 @@
   @include vp-767 {
     row-gap: 8px;
   }
-}
-
-.contacts__item:first-child {
-  row-gap: 23px;
-  margin-right: -2;
 }
 
 .contacts__item h3 {

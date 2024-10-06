@@ -39,6 +39,10 @@
   .custom-toggle__text {
     margin-top: 5px;
     cursor: pointer;
+
+    @include vp-1439 {
+      margin-top: 4px;
+    }
   }
 }
 

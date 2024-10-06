@@ -3,7 +3,8 @@
   padding-bottom: 60px;
 
   @include vp-1439 {
-    padding-bottom: 101px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   @include vp-767 {
@@ -24,11 +25,14 @@
   @include vp-1439 {
     padding: 0 0 13px;
     margin-bottom: 27px;
+    font-size: 34px;
   }
 
   @include vp-767 {
     padding: 2px 0 6px;
     margin-bottom: 27px;
+    line-height: 20px;
+    font-size: 20px;
   }
 }
 
@@ -45,6 +49,7 @@
     width: 99.8%;
     padding-top: 1px;
     padding-bottom: 1px;
+    gap: 13px;
   }
 
   @include vp-767 {
@@ -52,13 +57,30 @@
   }
 }
 
+.faq__list br {
+  display: none;
+
+  @include vp-1439 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.faq__item--differ:last-child {
+  margin-top: 1px;
+}
+
 .faq__item--differ .faq__wrapper {
   padding-top: 40px;
   padding-bottom: 40px;
 
   @include vp-1439 {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 30px 29px;
+    padding-left: 31px;
+    padding-bottom: 30px;
   }
 
   @include vp-767 {
@@ -73,7 +95,7 @@
 
 
   @include vp-1439 {
-    margin-bottom: 1px;
+    margin-bottom: 12px;
   }
 }
 
@@ -109,7 +131,9 @@
   }
 
   @include vp-1439 {
-    padding: 29px 30px;
+    padding: 31px 29px;
+    padding-left: 31px;
+    padding-bottom: 30px;
   }
 
   @include vp-767 {
@@ -156,7 +180,9 @@
     }
 
     @include vp-1439 {
-      padding-bottom: 25px;
+      padding: 38px 29px;
+      padding-bottom: 31px;
+      padding-left: 31px;
     }
 
     @include vp-767 {
@@ -239,6 +265,11 @@
       background-color: $color-transparent;
     }
   }
+
+  @include vp-1439 {
+    margin-top: -12px;
+    margin-right: 1px;
+  }
 }
 
 .faq__question {
@@ -258,11 +289,13 @@
   transition: color $trans-default;
 
   @include vp-1439 {
+    max-width: 564px;
     font-size: 22px;
     line-height: 26px;
   }
 
   @include vp-767 {
+    max-width: 187px;
     font-size: 16px;
     line-height: 18px;
   }
@@ -324,6 +357,10 @@
       background-color: $color-default-white;
     }
   }
+
+  @include vp-1439 {
+    margin-right: 1px;
+  }
 }
 
 .faq__btn[disabled] {
@@ -351,8 +388,9 @@
 
   @include vp-1439 {
     line-height: 20px;
-    margin-top: 16px;
-    padding-right: 36px;
+    margin-top: 17px;
+    padding-right: 28px;
+    letter-spacing: 0.01px;
   }
 
   @include vp-767 {

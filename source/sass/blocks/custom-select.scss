@@ -34,7 +34,8 @@
   gap: 13px;
 
   @include vp-1439 {
-    gap: 8px;
+    margin-top: -1px;
+    gap: 13px;
   }
 
   @include vp-767 {
