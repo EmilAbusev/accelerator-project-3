@@ -1,12 +1,14 @@
 .about {
-  margin-top: 68px;
+  padding-top: 68px;
+  padding-bottom: 60px;
 
   @include vp-1439 {
-    margin-top: 95px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   @include vp-767 {
-    margin-top: 58px;
+    padding-top: 58px;
   }
 }
 
@@ -18,7 +20,7 @@
 
   @include vp-1439 {
     padding: 0 45px;
-    gap: 61px;
+    gap: 60px;
   }
 
   @include vp-767 {
@@ -35,7 +37,7 @@
   @include vp-1439 {
     flex-direction: column;
     margin-top: -7px;
-    gap: 29px;
+    gap: 39px;
   }
 
   @include vp-767 {
@@ -51,8 +53,8 @@
   gap: 29px;
 
   @include vp-1439 {
-    max-width: 73%;
-    gap: 25px;
+    max-width: 100%;
+    gap: 31px;
   }
 
   @include vp-767 {
@@ -63,14 +65,14 @@
 
 .about__titel h2 {
   margin: 0;
-  padding-top: 7px;
+  margin-top: 7px;
   line-height: 50px;
   font-size: 50px;
   font-weight: 400;
   color: $color-cerulean-blue;
 
   @include vp-1439 {
-    padding-top: 6px;
+    margin-top: 7px;
     line-height: 50px;
     font-size: 34px;
   }
@@ -108,7 +110,7 @@
 
   @include vp-1439 {
     max-width: 73%;
-    gap: 23px;
+    gap: 30px;
   }
 
   @include vp-767 {
@@ -160,7 +162,7 @@
   margin-top: 11px;
 
   @include vp-1439 {
-    margin-top: 13px;
+    margin-top: 10px;
   }
 
   @include vp-767 {
@@ -176,7 +178,7 @@
 
   @include vp-1439 {
     gap: 30px;
-    padding: 3px 3px 3px 30px;
+    padding: 4px 4px 4px 30px;
   }
 
   @include vp-767 {
@@ -206,9 +208,9 @@
   border-radius: 20px;
 
   @include vp-1439 {
-    padding: 40px 60px;
-    padding-top: 61px;
-    padding-right: 40px;
+    padding: 50px 70px;
+    padding-top: 72px;
+    padding-right: 50px;
   }
 
   @include vp-767 {
@@ -228,7 +230,7 @@
   list-style: none;
 
   @include vp-1439 {
-    gap: 42px 50px;
+    gap: 54px 51px;
   }
 
   @include vp-767 {
@@ -306,6 +308,10 @@
   font-weight: 300;
   color: $color-alabaster;
 
+  @include vp-1439 {
+    margin-bottom: -15px;
+  }
+
   @include vp-767 {
     font-size: 14px;
   }
@@ -317,7 +323,7 @@
 
   @include vp-1439 {
     gap: 7px;
-    padding: 26px 39px 25px 29px;
+    padding: 16px 21px 30px 20px;
   }
 
   @include vp-767 {
@@ -328,6 +334,10 @@
 
 .about__features-item--first-slot h3 {
   margin-bottom: 25px;
+
+  @include vp-1439 {
+    margin-bottom: 7px;
+  }
 }
 
 .about__features-item--second-slot {
@@ -336,7 +346,8 @@
 
   @include vp-1439 {
     gap: 7px;
-    padding: 26px 10px 25px 29px;
+    padding: 16px 52px;
+    padding-left: 20px;
   }
 
   @include vp-767 {
@@ -347,42 +358,11 @@
 
 .about__features-item--second-slot h3 {
   margin: 0;
-  margin-top: 20px;
+  margin-bottom: 7px;
 }
 
-.about__features-item--last-slot {
-  gap: 49px;
-  padding: 40px 27px 26px 40px;
-
-  @include vp-1439 {
-    gap: 7px;
-    padding: 26px 27px 25px 29px;
-  }
-
-  @include vp-767 {
-    gap: 4px;
-    padding: 15px 28px 23px 19px;
-  }
-}
-
-.about__features-item--last-slot h3 {
-  @include vp-1439 {
-    padding-right: 30px;
-  }
-
-  @include vp-767 {
-    padding-right: 0;
-  }
-}
-
-.about__features-item--last-slot::before {
-  @include vp-1439 {
-    top: -13px;
-  }
-
-  @include vp-767 {
-    top: -11px;
-  }
+.about__features-item--second-slot p {
+  margin-bottom: -1px;
 }
 
 
@@ -392,7 +372,7 @@
 
   @include vp-1439 {
     gap: 7px;
-    padding: 26px 17px 25px 29px;
+    padding: 16px 20px 30px 20px;
   }
 
   @include vp-767 {
@@ -424,7 +404,47 @@
   margin-top: 10px;
   margin-bottom: 15px;
 
+  @include vp-1439 {
+    margin-top: 0;
+    margin-bottom: 7px;
+  }
+
   @include vp-767 {
     width: 201px;
+  }
+}
+
+.about__features-item--last-slot {
+  gap: 49px;
+  padding: 40px 27px 26px 40px;
+
+  @include vp-1439 {
+    gap: 14px;
+    padding: 16px 20px 30px 20px;
+  }
+
+  @include vp-767 {
+    gap: 4px;
+    padding: 15px 28px 23px 19px;
+  }
+}
+
+.about__features-item--last-slot h3 {
+  @include vp-1439 {
+    padding-right: 30px;
+  }
+
+  @include vp-767 {
+    padding-right: 0;
+  }
+}
+
+.about__features-item--last-slot::before {
+  @include vp-1439 {
+    top: -13px;
+  }
+
+  @include vp-767 {
+    top: -11px;
   }
 }

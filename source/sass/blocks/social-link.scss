@@ -11,6 +11,7 @@
   height: 36px;
   transition: background-color $trans-default;
   border-radius: 50%;
+  outline: none;
 
   @include vp-767 {
     width: 26px;
@@ -28,10 +29,17 @@
     }
   }
 
-  &:hover,
-  &:focus-visible {
+  &:hover {
     svg {
       color: $color-white-07;
+    }
+  }
+
+  &:focus {
+    background-color: $color-default-white;
+
+    svg {
+      color: $color-cerulean-blue;
     }
   }
 

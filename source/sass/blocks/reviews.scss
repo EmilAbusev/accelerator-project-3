@@ -1,14 +1,13 @@
 .reviews {
-  margin-bottom: 121px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @include vp-1439 {
-    margin-bottom: 100px;
-    padding-bottom: 1px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
-    margin-bottom: 59px;
-    padding-bottom: 0;
+    padding-bottom: 59px;
   }
 }
 
@@ -72,8 +71,8 @@
 
 .reviews__item {
   border-radius: 16px;
-  border: 1px solid $color-cerulean-blue;
-  padding: 49px 51px 43px 49px;
+  border: 2px solid $color-cerulean-blue;
+  padding: 51px 47px 43px 50px;
 
   @include vp-1439 {
     max-width: 560px;
@@ -92,7 +91,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 30px;
 
   @include vp-767 {
     gap: 24px;
@@ -149,7 +148,6 @@ dd {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  margin-top: 2px;
 
   @include vp-1439 {
     margin-top: 4px;
@@ -190,7 +188,7 @@ dd {
 .reviews__author-info {
   display: flex;
   flex-direction: column;
-  row-gap: 5px;
+  row-gap: 9px;
 
   @include vp-1439 {
     row-gap: 4px;
@@ -207,7 +205,7 @@ dd {
 }
 
 .reviews__quote h3 {
-  margin: 0 0 14px;
+  margin: 0 0 25px;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;

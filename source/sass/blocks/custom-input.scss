@@ -40,7 +40,8 @@
 
   textarea {
     padding: 16px 25px;
-    min-height: 96px;
+    min-height: 88px;
+    max-height: 94px;
     resize: none;
     appearance: none;
 
@@ -61,7 +62,7 @@
 .custom-input--primary {
   label,
   .custom-input__wrapper {
-    gap: 9px;
+    gap: 13px;
 
     @include vp-767 {
       gap: 10px;

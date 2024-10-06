@@ -1,6 +1,6 @@
 .grant {
-  padding-top: 121px;
-  padding-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 160px;
   color: $color-default-white;
   background-color: $color-cerulean-blue;
 
@@ -34,7 +34,7 @@
 .grant__intro {
   display: flex;
   flex-direction: column;
-  gap: 29px;
+  gap: 30px;
 
   @include vp-1439 {
     gap: 28px;
@@ -74,7 +74,7 @@
   width: 100%;
   object-fit: cover;
   border-radius: 16px;
-  margin-top: 11px;
+  margin-top: 10px;
 
   @include vp-1439 {
     margin-top: 8px;
@@ -144,7 +144,7 @@
 
 .grant__item {
   position: relative;
-  padding: 22px 58px 30px 23px;
+  padding: 31px 58px 30px 24px;
   border: 1px solid $color-alabaster;
   border-radius: 16px;
 
