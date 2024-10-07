@@ -24,22 +24,8 @@ const swiperPrograms = () => {
       draggable: true,
       dragSize: 392,
     },
-
+    speed: 300,
     breakpoints: {
-      1440: {
-        spaceBetween: 32,
-        slidesPerView: 3,
-        allowTouchMove: false,
-      },
-
-      768: {
-        spaceBetween: 30,
-        slidesPerView: 'auto',
-        scrollbar: {
-          dragSize: 324,
-        },
-      },
-
       320: {
         spaceBetween: 15,
         slidesPerView: 'auto',
@@ -47,6 +33,18 @@ const swiperPrograms = () => {
           el: '',
           enabled: false,
         },
+      },
+      768: {
+        spaceBetween: 30,
+        slidesPerView: 'auto',
+        scrollbar: {
+          dragSize: 324,
+        },
+      },
+      1440: {
+        spaceBetween: 32,
+        slidesPerView: 3,
+        allowTouchMove: false,
       },
     },
   });

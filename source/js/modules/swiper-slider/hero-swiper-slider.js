@@ -20,6 +20,7 @@ const swiperHero = () => {
     },
     loop: true,
     autoHeight: true,
+    speed: 300,
     breakpoints: {
       1440: {
         allowTouchMove: false,

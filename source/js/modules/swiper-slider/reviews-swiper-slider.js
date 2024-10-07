@@ -21,10 +21,14 @@ const setSliderReviews = () => {
       nextEl: buttonNext,
       prevEl: buttonPrev,
     },
+    speed: 300,
     breakpoints: {
-      1440: {
-        slidesPerView: 2,
-        spaceBetween: 32,
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        scrollbar: {
+          enabled: false,
+        },
       },
       768: {
         slidesPerView: 'auto',
@@ -33,12 +37,9 @@ const setSliderReviews = () => {
           dragSize: 324,
         },
       },
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        scrollbar: {
-          enabled: false,
-        },
+      1440: {
+        slidesPerView: 2,
+        spaceBetween: 32,
       },
     },
   });
@@ -50,4 +51,4 @@ const initSliderReviews = () => {
   }
 };
 
-export {initSliderReviews};
+export { initSliderReviews };

@@ -33,14 +33,16 @@ const setSliderNews = () => {
     observer: true,
     spaceBetween: 20,
     slidesPerView: 'auto',
+    speed: 300,
     grid: {
       rows: 1,
     },
     breakpoints: {
-      1440: {
-        spaceBetween: 32,
+      320: {
+        initialSlide: 0,
+        spaceBetween: 20,
         grid: {
-          rows: 1,
+          rows: 2,
         },
       },
       768: {
@@ -49,10 +51,10 @@ const setSliderNews = () => {
           rows: 2,
         },
       },
-      320: {
-        spaceBetween: 20,
+      1440: {
+        spaceBetween: 32,
         grid: {
-          rows: 2,
+          rows: 1,
         },
       },
     },
