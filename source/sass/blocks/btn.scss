@@ -335,7 +335,9 @@
   }
 
   @include vp-767 {
-    padding-left: 65px;
+    padding: 5px 0;
+    padding-bottom: 3px;
+    padding-left: 73px;
   }
 
   &:hover:not([disabled]) {
@@ -406,12 +408,39 @@
 
 .btn-form span {
   color: $color-default-white;
+
+  @include vp-767 {
+    letter-spacing: 0.2px;
+  }
 }
 
 .btn-form .btn-icon {
   background-color: $color-default-white;
+
+  @include vp-767 {
+    margin-right: 5px;
+  }
 }
 
 .btn-form .btn-icon svg {
   stroke: $color-cerulean-blue;
+}
+
+.btn-modal {
+  padding-left: 45px;
+
+  @include vp-767 {
+    padding-left: 75px;
+  }
+}
+
+.btn-modal span {
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: 500;
+
+  @include vp-767 {
+    line-height: 12px;
+    font-size: 12px;
+  }
 }

@@ -8,7 +8,7 @@
   }
 
   @include vp-767 {
-    padding-top: 35px;
+    padding-top: 53px;
     padding-bottom: 60px;
   }
 }
@@ -98,7 +98,7 @@
   }
 
   @include vp-767 {
-    padding-top: 3px;
+    padding-top: 7px;
   }
 }
 
@@ -119,7 +119,7 @@
 
   @include vp-767 {
     grid-column: 1/-1;
-    margin: 31px 0;
+    margin: 33px 0;
     margin-bottom: 32px;
   }
 }
@@ -237,7 +237,7 @@
 
   @include vp-767 {
     min-height: 69px;
-    padding: 6px 18px;
+    padding: 8px 18px;
     padding-bottom: 10px;
   }
 }
@@ -275,6 +275,7 @@
     width: 30px;
     height: 30px;
     padding: 10px;
+    margin-bottom: 0;
   }
 }
 

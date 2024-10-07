@@ -9,14 +9,18 @@
   }
 
   @include vp-767 {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 83px;
+    padding-bottom: 40px;
   }
 }
 
 .feedback .container {
   @include vp-1439 {
     padding: 0 58px;
+  }
+
+  @include vp-767 {
+    padding: 0 10px;
   }
 }
 
@@ -35,13 +39,17 @@
   z-index: -1;
   background: $color-alabaster;
 
+  @include vp-767 {
+    display: block;
+    top: 40px;
+  }
+
   img {
     display: block;
     max-width: 100%;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 16px;
   }
 }
 
@@ -68,6 +76,7 @@
 
   @include vp-767 {
     margin-top: 0;
+    margin-right: 9px;
   }
 }
 

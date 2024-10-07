@@ -8,8 +8,14 @@
   }
 
   @include vp-767 {
-    padding-top: 54px;
-    padding-bottom: 60px;
+    padding-top: 51px;
+    padding-bottom: 50px;
+  }
+}
+
+.news .container {
+  @include vp-767 {
+    padding: 0;
   }
 }
 
@@ -39,9 +45,7 @@
     line-height: 20px;
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 25px;
-    padding-right: 15px;
-    padding-top: 8px;
+    margin-bottom: 23px;
   }
 }
 
@@ -55,7 +59,8 @@
   }
 
   @include vp-767 {
-    margin: 0 0 17px;
+    margin: 0 0 24px;
+    margin-left: 16px;
     overflow-x: auto;
   }
 }
@@ -77,7 +82,7 @@
 
   @include vp-767 {
     flex-wrap: nowrap;
-    gap: 12px;
+    gap: 9px;
   }
 }
 
@@ -97,13 +102,13 @@
   text-transform: uppercase;
   color: $color-cerulean-blue-06;
   background-color: $color-transparent;
-  border: none;
   border-radius: 20px;
   cursor: pointer;
   user-select: none;
   transition: border $trans-default, color $trans-default;
   appearance: none;
   outline: none;
+  border: 2px solid $color-transparent;
 
   &:hover:not([disabled]) {
     color: $color-cerulean-blue;
@@ -131,7 +136,8 @@
   }
 
   @include vp-767 {
-    padding: 10px 14px;
+    padding: 11px 14px;
+    padding-bottom: 9px;
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.24px;
@@ -148,8 +154,9 @@
   }
 
   @include vp-767 {
-    margin-left: 1px;
-    padding: 9px 13px 6px 14px;
+    margin-left: 0;
+    padding: 11px 14px;
+    padding-bottom: 9px;
   }
 }
 
@@ -163,7 +170,8 @@
   }
 
   @include vp-767 {
-    padding-right: 15px;
+    padding: 0 15px;
+    padding-right: 16px;
   }
 }
 
@@ -179,7 +187,7 @@
   justify-content: center;
 
   @include vp-767 {
-    gap: 16px;
+    gap: 7px;
   }
 }
 
